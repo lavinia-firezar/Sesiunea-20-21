@@ -1,10 +1,15 @@
+:root {
+    --fs-large:1.25rem;
+    --fs-medium:0.938rem;
+    --fs-small:0.625rem;
+}
 body {
     background-color: antiquewhite;
 }
 
 p{
     color:rgb(96, 24, 24);
-    font-size: 40px;
+    font-size:calc(2 * var(--fs-large));
     text-align: center;
 }
 
@@ -13,24 +18,24 @@ p{
     height:300px;
     background-color:brown;
     margin:auto;
-    padding:20px;
+    padding:var(--fs-large);
 }
 
 #display {
     width:200px;
-    height:50px;
-    margin-bottom:10px;
+    height:calc(2 * var(--fs-large));
+    margin-bottom:var(--fs-small);
 }
 
 .arithmetic-operators input {
-    padding:15px;
-    margin-bottom:10px;
+    padding:var(--fs-medium);
+    margin-bottom:var(--fs-small);
     margin-right: 5px; 
 }
 
 input[type="button"] {
     color:brown;
-    font-size: 15px;
+    font-size: var(--fs-medium);
     font-weight: 700;
 }
 
@@ -39,15 +44,15 @@ input[type="button"] {
 }
 
 .numbers input {
-    padding:10px;
-    margin-bottom:5px;
-    width:40px;
+    padding:var(--fs-small);
+    margin-bottom:calc(var(--fs-medium) - var(--fs-small));
+    width:calc(2 * var(--fs-large));
 }
 
 #equal {
     width:150px;
     height:170px;
-    margin-left:10px;
+    margin-left:var(--fs-small);
 }
 
 #clear {
